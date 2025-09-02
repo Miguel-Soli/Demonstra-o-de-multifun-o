@@ -87,20 +87,3 @@ while True:
      for num2 in range (1,51,):
        if num2 % 2==0:
         print(f'{num2}') 
-#if and for
-    if opção == "9":
-       import random
-    
-       numero_sorteado = random.randint(1,10)
-       acertou = False
-       print("Jogo de adidivinhação de 1 a 10.")
-       for tentativa in range(1,2): #3tentativas
-          chute = int(input(f"Tentativa {tentativa}: digite a tentativa: "))
-    if chute == numero_sorteado:
-          print("parabéns você acertou 😁😁😁")
-          acertou = False
-          break
-    else:
-        print("Errou! 😹😹😹")
-    if not acertou:
-         print(f"O número era {numero_sorteado}")
